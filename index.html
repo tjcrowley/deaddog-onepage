@@ -19,12 +19,12 @@
   </head>
   <body>
     <header class="hero">
-      <nav>
-        <a href="#fractional-cto">Services</a>
-        <a href="#ai-capabilities">AI Capabilities</a>
-        <a href="#case-studies">Case Studies</a>
-        <a href="#portfolio">Selected Work</a>
-        <a href="#contact">Contact</a>
+      <nav class="nav container">
+        <div class="logo-wrap">
+          <img src="logo.jpg" alt="Dead Dog Studios logo" class="logo-img" />
+          <div class="logo">DEAD DOG STUDIOS</div>
+        </div>
+        <a class="btn btn-outline" href="#contact">Book a Call</a>
       </nav>
       <div class="container hero-content">
         <p class="eyebrow">Fractional CTO services</p>
@@ -144,7 +144,7 @@
 
       <section id="case-studies" class="section container">
         <p class="eyebrow">Case Studies</p>
-        <h2>Turning creative concepts into city-scale execution</h2>
+        <h2>Featured Use Case: Turning creative concepts into city-scale execution</h2>
         <article class="card case-card case-card-featured">
           <div class="case-media-wrap">
             <img src="valentines-case-small.jpg" alt="Valentine's Conspiracy campaign visual" class="case-image" />
@@ -169,7 +169,6 @@
             </ul>
             <div class="cta-row">
               <a class="btn" href="https://valentinesconspiracy.com/" target="_blank" rel="noopener">Visit Valentine's Conspiracy</a>
-              <a class="btn btn-outline" href="use-cases.html">View Use Cases</a>
             </div>
           </div>
         </article>
@@ -177,33 +176,75 @@
 
       <section id="portfolio" class="section container">
         <h2>Selected Work & Use Cases</h2>
-        <p>
-          I have led product and platform execution across a range of high-stakes environments, from maritime compliance to AI-driven retail POS.
-        </p>
         <div class="grid-3">
-          <article class="card">
+          <article class="card project">
+            <img src="portfolio-obrien.png" alt="SS Jeremiah O'Brien / National Liberty Ship Memorial screenshot" />
+            <h3>SS Jeremiah O’Brien / National Liberty Ship Memorial</h3>
+            <div class="meta">February 5, 2025</div>
+            <p>Website project for the SS Jeremiah O’Brien / National Liberty Ship Memorial.</p>
+            <p class="active-note">Status: Ongoing — currently maintained and actively worked on.</p>
+          </article>
+
+          <article class="card project">
+            <img src="portfolio-kinkbnb.png" alt="KinkBNB screenshot" />
+            <h3>KinkBNB</h3>
+            <div class="meta">February 2015</div>
+            <p>All development through the nine-year lifespan of KinkBNB.com.</p>
+            <p class="active-note">Status: Ongoing — currently maintained and actively worked on.</p>
+            <div class="links">
+              <a class="btn" href="https://www.kinkbnb.com" target="_blank" rel="noopener">Visit Site</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <img src="portfolio-clueportal.png" alt="Clueportal screenshot" />
+            <h3>Clueportal</h3>
+            <div class="meta">October 2020</div>
+            <p>Work for The Most Fun You Ever Had Adventures and Escapes.</p>
+            <p class="active-note">Status: Ongoing — currently maintained and actively worked on.</p>
+            <div class="links">
+              <a class="btn" href="https://www.clueportal.com" target="_blank" rel="noopener">Visit Clueportal</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <img src="portfolio-barbarycoastmarine.png" alt="Barbary Coast Marine screenshot" />
+            <h3>Barbary Coast Marine</h3>
+            <div class="meta">Current</div>
+            <p>Website and digital presence work for Barbary Coast Marine.</p>
+            <p class="active-note">Status: Ongoing — currently maintained and actively worked on.</p>
+            <div class="links">
+              <a class="btn" href="https://www.barbarycoastmarine.com" target="_blank" rel="noopener">Visit Site</a>
+            </div>
+          </article>
+
+          <article class="card project">
             <h3>OpenRegister POS</h3>
-            <p><strong>Challenge:</strong> Delivering a high-availability, local-first retail POS for high-traffic environments that cannot tolerate cloud outages.</p>
+            <p><strong>Challenge:</strong> Delivering a high-availability, local-first retail POS for high-traffic environments.</p>
             <p><strong>Solution:</strong> Architected a robust TypeScript stack using SQLCipher and delta-commutative inventory logic to maintain 100% operation despite network failure.</p>
           </article>
-          <article class="card">
+
+          <article class="card project">
             <h3>WatchPost AI Surveillance</h3>
-            <p><strong>Challenge:</strong> Implementing non-invasive, real-time safety monitoring without relying on privacy-invasive cloud video pipelines.</p>
+            <p><strong>Challenge:</strong> Implementing non-invasive, real-time safety monitoring without relying on cloud video pipelines.</p>
             <p><strong>Solution:</strong> Built an end-to-end edge AI pipeline utilizing pgvector for real-time threat analysis and snapshot-based alerting.</p>
           </article>
-          <article class="card">
+
+          <article class="card project">
             <h3>SS Jeremiah O'Brien Modernization</h3>
-            <p><strong>Challenge:</strong> Modernizing network infrastructure on a historic passenger vessel to support IoT and regulatory safety standards.</p>
+            <p><strong>Challenge:</strong> Modernizing network infrastructure on a historic passenger vessel.</p>
             <p><strong>Solution:</strong> Engineered a ruggedized, ship-wide UniFi network featuring P2P site backhaul, high-security surveillance, and failover-resilient hardware.</p>
           </article>
-          <article class="card">
+
+          <article class="card project">
             <h3>DJOttoBot Music Orchestration</h3>
-            <p><strong>Challenge:</strong> Automating collaborative, vibe-aware music selection for shared community/maker spaces.</p>
+            <p><strong>Challenge:</strong> Automating collaborative, vibe-aware music selection for shared community spaces.</p>
             <p><strong>Solution:</strong> Developed a local-first orchestration engine featuring fuzzy-logic search, scheduled vibe shifting, and polished visual identity integration.</p>
           </article>
-          <article class="card">
+
+          <article class="card project">
             <h3>FTSign Controller</h3>
-            <p><strong>Challenge:</strong> Building a cross-platform digital signage system with native hardware limitations (locked orientation/Silk Browser).</p>
+            <p><strong>Challenge:</strong> Building a cross-platform digital signage system with native hardware limitations.</p>
             <p><strong>Solution:</strong> Created a hardware-native player wrapper that abstracts platform quirks, ensuring consistent signage display across FireTV/Chromecast.</p>
           </article>
         </div>
