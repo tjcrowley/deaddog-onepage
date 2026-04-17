@@ -1,0 +1,41 @@
+    "name": "deaddogstudios-onepage",
+    "static_sites": [
+      {
+        "name": "web",
+        "github": {
+          "repo": "tjcrowley/deaddog-onepage",
+          "branch": "master",
+          "deploy_on_push": true
+        },
+        "source_dir": "/"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "deaddogstudios.com",
+        "type": "PRIMARY"
+      },
+      {
+        "domain": "www.deaddogstudios.com",
+        "type": "ALIAS"
+      }
+    ],
+    "region": "nyc",
+    "ingress": {
+      "rules": [
+        {
+          "match": {
+            "path": {
+              "prefix": "/"
+            }
+          },
+          "component": {
+            "name": "web"
+          }
+        }
+      ]
+    },
+    "features": [
+      "buildpack-stack=ubuntu-22"
+    ]
+  }
